@@ -1,6 +1,5 @@
 #!/usr/bin/env python3
 
-
 class Calculator(object):
         def __init__(self, inA, inB):
                 self.a = inA
