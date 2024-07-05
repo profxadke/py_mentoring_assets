@@ -7,24 +7,24 @@ class Calculator(object):
                 self.b = inB
         def add(self):
                 return self.a + self.b
-        def mul(self):
+        def multiply(self):
                 return self.a * self.b
 
 
 class Scientific(Calculator):
         def add(self):
                 return super(Scientific, self).add()
-        def power(self):
+        def exponent(self):
                 return pow(self.a, self.b)
 
 
 newCalculation = Calculator(10, 20)
 
 print(f'a + b: {newCalculation.add()}')
-print(f'a x b: {newCalculation.mul()}')
+print(f'a x b: {newCalculation.multiply()}')
 
 newPower = Scientific(2, 3)
 
 print(f'a + b: {newPower.add()}')
-print(f'a * b: {newPower.mul()}')
-print(f'a ^ b: {newPower.power()}')
+print(f'a * b: {newPower.multiply()}')
+print(f'a ^ b: {newPower.exponent()}')
